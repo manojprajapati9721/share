@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Share | Manoj Prajapati</title>
+  <link rel="shortcut icon" href="./img/favicon-32x32.png" type="image/x-icon">
+  <link rel="stylesheet" href="index.css">
+  
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <div class="circel1"></div>
+    <div class="circel2"></div>
+
+    <div class="box-wrapper">
+      <div class="card-wrapper">
+
+        <div>
+          <img class="card-img" src="./img/IMG_20230224_182710.jpg" alt="profile Image">
+        </div>
+
+        <div>
+          <h1 class="username">Manoj Prajapati</h1>
+        </div>
+
+        <div>
+          <h3 class="sub-heading">Web Developer</h3>
+        </div>
+
+        <div class="bottom-group">
+          <button onclick="openModal()" class="btn-share btn-card">
+            <i class="fa-solid fa-share"></i>
+            <div>Visite my profile</div>
+          </button>
+          <butto>
+            <a class="btn-follow" target="_blank"
+            href="https://www.linkedin.com/in/manoj-prajapati-165a29261">
+            Linkedin Profile</a>
+          </butto>
+        </div>
+
+      </div>
+
+
+    </div>
+
+    <!-- Modal Or Share Page -->
+
+    <!-- Modal Component -->
+    <div class="modal">
+      <div class="modal-header">
+        <h1>Share My Profile</h1>
+        <div>
+          <i onclick="closeModal()" class="fa-solid fa-xmark close"></i>
+        </div>
+      </div>
+
+      <div>
+
+        <h3>Share this via</h3>
+
+        <div class="icon-container">
+          <a target="_blank" href="http://bit.ly/3IUp4p0" class="icon" id="facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a target="_blank" href="http://bit.ly/3kp30sY" class="icon" id="youtube">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+          <a target="_blank" href="http://bit.ly/3KD65Ay" class="icon" id="instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a target="_blank" href="http://bit.ly/3Zge0IB" class="icon" id="whatsapp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+          <a target="_blank" href="http://bit.ly/3m3Giaj" class="icon" id="telegram">
+            <i class="fa-brands fa-telegram"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Overlay -->
+    <div class="overlay" onclick="closeModal()"></div>
+  </div>
+  <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
